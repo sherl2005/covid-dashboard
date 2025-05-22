@@ -1,0 +1,29 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook checkpoints
+*.ipynb_checkpoints/
+.ipynb_checkpoints/
+
+# Virtual environments
+covid-env/
+venv/
+.env/
+
+# Environment files
+.env
+*.env
+
+# macOS
+.DS_Store
+
+# Prophet model cache files
+*.json
+
+# Logs and outputs
+*.log
+*.out
+
+# VSCode settings (optional)
+.vscode/

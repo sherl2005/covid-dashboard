@@ -1,0 +1,11 @@
+# requirements.txt
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+streamlit
+requests
+prophet
+pmdarima
+scikit-learn
