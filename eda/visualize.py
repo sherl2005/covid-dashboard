@@ -1,5 +1,6 @@
 # visualize.py
 import matplotlib.pyplot as plt
+import streamlit as st
 
 def plot_cases(df):
     df["7-Day Avg"] = df["Daily Cases"].rolling(window=7).mean()
@@ -11,4 +12,4 @@ def plot_cases(df):
     plt.xlabel("Date")
     plt.ylabel("Cases")
     plt.grid()
-    plt.show()
+    st.pyplot(plt)

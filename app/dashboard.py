@@ -1,9 +1,16 @@
 # dashboard.py
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import streamlit as st
 from data.fetch import fetch_data
 from forecast.arima_model import train_arima
 from forecast.prophet_model import train_prophet
 from eda.visualize import plot_cases
+
+import warnings
+warnings.filterwarnings("ignore")
 
 st.title("COVID-19 Trend & Forecast Dashboard")
 
